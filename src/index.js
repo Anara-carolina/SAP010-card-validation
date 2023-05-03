@@ -1,3 +1,11 @@
-import validator from './validator.js';
+let container = document.querySelector(".container");
 
-console.log(validator);
+let nome = prompt("Qual é o seu nome?");
+if (nome != null) {
+  alert(`Bem-vindes, ${nome}!`);
+}
+
+container.addEventListener("submit", function(event) {
+  event.preventDefault();
+  window.location.href = "validator.html";
+});
