@@ -1,5 +1,5 @@
 # Cartão de Crédito Válido
-
+Este projeto foi proposto pelo Bootcamp de programação LABORATORIA  e desenvolvido pela aluna Anara Carolina Barbosa Martins, tem como objetivo empregabilidade na área da tecnologia destacando a área de Front-End; e tem um método de ensino diferenciado  onde potencializamos nosso autoconhecimento e aprendemos a aprender e ao desenvolver o projeto aprendi e aperfeiçoei HTML, CSS e javascript, além de conhecer e aprender utilizar o VS CODE, GIT e GitHub.
 ## Índice
 
 * [1. Introdução](#1-Introdução)
@@ -31,52 +31,15 @@ seus dígitos finais for um múltiplo de 10.
 ![gráfico do algoritmo de
 Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
-## 2. Resumo do projeto
+## 2. Validator 
+O validator tem como objetivo, armazenar e e proteger contra fraudes validando e mascarando os números do cartão de credito do usuário.
+Pode ser utilizado em compras e-commerce.
 
-Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário
-validar o número de um cartão de crédito.  Além disso, você precisará
-implementar a funcionalidade para ocultar todos os dígitos de um cartão, exceto
-os quatro últimos.
+Possui uma interface simples de fácil utilização para todas as pessoas. 
 
-O tema é livre. Você deve pensar em quais situações da vida real um cartão de
-crédito precisaria ser validado e em como deveria ser a experiência do usuário
-(telas, explicações, mensagens, cores, marca?) etc.
+ 
+ 
 
-Como continuação do projeto de pré-admissão, você retrabalhará os fundamentos
-do JavaScript, incluindo conceitos como variáveis, condicionais e funções,
-bem como eventos e manipulação básica de DOM, fundamentos HTML e CSS.
-Ao desenvolver este projeto, você também se familiarizará com novos conceitos.
-
-### Os objetivos gerais deste projeto são os seguintes
-
-* Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
-  pastas (através de módulos em JS).
-* Conhecer as ferramentas de manutenção e melhoria do código (linters e testes
-  unitários).
-* Aprenda sobre objetos, estruturas, métodos e iteração (loops) em JavaScript
-* Implementar controle de versão com git (e a plataforma github)
-
-## 3. Considerações gerais
-
-* Resolvemos este projeto individualmente. Recomendamos uma duração de 1-3 sprints.
-* Concentre-se em aprender e não apenas "concluir" o projeto.
-* Sugerimos que você não tente saber tudo antes de começar a codificar.
-  Não se preocupe muito agora com o que você _ainda_ não entende.
-  Você vai aprender.
-
-## 4. Marco: Critérios de Aceitação Mínimos do Projeto
-
-Esses são os requisitos que seu projeto deve atender para garantir que
-seu trabalho atenda aos objetivos principais.
-
-**1. Uma interface que deve permitir ao usuário:**  
-
-* Inserir o número que desejamos validar. Use apenas caracteres
-  numéricos (dígitos) no cartão para validar [0-9].
-* Constatar se o resultado é válido ou não.
-* Ocultar todos os dígitos do número do cartão, excetuando os últimos 4
-  caracteres.
-* Não deve poder inserir um campo vazio.
 
 **2. Testes unitários dos métodos.**
 Os métodos `validator` (`isValid` e `maskify`) devem ser cobertos por testes unitários.
