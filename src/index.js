@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-console.log(validator)
+
 
 
 const myInput = document.getElementById("numero");            // Obtém o elemento de entrada do usuário para o número do cartão de crédito
@@ -44,8 +44,7 @@ bandeiraVisa.style.display = "none";           // Escondendo todas as bandeiras 
 bandeiraMastercard.style.display = "none";
 bandeiraElo.style.display = "none";
 
-
-
+console.log(validator)
 
 
 
