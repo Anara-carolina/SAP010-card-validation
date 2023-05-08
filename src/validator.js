@@ -46,6 +46,9 @@ const validator = {
   }
 };
 
-validator.init();
+
+validator.init()
+
+
 
 export default validator;
