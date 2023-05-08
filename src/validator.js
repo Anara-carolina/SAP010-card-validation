@@ -18,7 +18,7 @@ const validator = {
     }
     return isValid(cardNumber);
   },
-  
+
   maskify(cardNumber) {
     if (cardNumber.length > 4) {
       const lastFourDigits = cardNumber.slice(-4);
@@ -28,26 +28,7 @@ const validator = {
       return cardNumber;
     }
   },
-
-  init() {
-    const enviarBtn = document.getElementById("enviar-btn");
-    const numeroCartaoInput = document.getElementById("numero");
-    enviarBtn.addEventListener("click", function() {
-      const numeroCartao = numeroCartaoInput.value;
-      const isValid1 = validator.isValid(numeroCartao);
-      if (numeroCartao === '') {
-        alert('Por favor, insira um número de cartão válido');
-      } else if (isValid1) {
-        alert('sua compra foi aprovada com sucesso!!! numero de cartão válido! ' + validator.maskify(numeroCartao));
-      } else {
-        alert('Sua compra infelizmente não foi aprovada, digite um número de cartão válido');
-      }
-    });
-  }
 };
-
-
-validator.init()
 
 
 

@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Validação</title>
-    <link rel="stylesheet" href="validator.css">
-  
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <div class="container">
-        <div class="card-container">
-          <div class="front">
+
+<head>
+  <meta charset="utf-8">
+  <title>Validação</title>
+  <link rel="stylesheet" href="validator.css">
+
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="container">
+      <div class="card-container">
+        <div class="front">
           <img src="cartaoo/1.png" alt="cartao-de-credito">
           <div class="flexbox">
-          <div class="box">
-          </div>
-          <div class="box">
-            
-            <div class="expiration">
-              <div class="exp-month"></div>
-              
-              <div class="exp-year"></div>
-             
+            <div class="box">
+            </div>
+            <div class="box">
+              <div class="expiration">
+                <div class="exp-month"></div>
+                <div class="exp-year"></div>
+              </div>
             </div>
           </div>
-          </div>
-          </div>
-        </div>  
-        <form action="">
-          <div class="inputBox"> 
-            <span>Número do cartão</span>
-            <input type="text" maxlength="16" pattern="\d*" class="card-number-input" id="numero">
-
+        </div>
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <span>Número do cartão</span>
+          <input type="text" maxlength="16" pattern="\d*" class="card-number-input" id="numero">
+        </div>
+        <div class="inputBox">
+          <span>Titular do cartão</span>
+          <input type="text" class="card-holder-input">
+        </div>
+        <div class="flexbox">
+          <div class="inputBox">
+            <span>Mês de vencimento</span>
+            <select name="" id="" class="month-input">
+              <option value="month" selected disabled>Mês</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
           </div>
           <div class="inputBox">
-            <span>Titular do cartão</span>
-            <input type="text" class="card-holder-input">
+            <span>Ano de vencimento</span>
+            <select name="" id="" class="year-input">
+              <option value="year" selected disabled>Ano</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+            </select>
           </div>
-          <div class="flexbox">
-            <div class="inputBox">
-              <span>Mês de vencimento</span>
-              <select name="" id="" class="month-input">
-                <option value="month" selected disabled>Mês</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-            </div>
-            <div class="inputBox">
-              <span>Ano de vencimento</span>
-              <select name="" id="" class="year-input">
-                <option value="year" selected disabled>Ano</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-                <option value="2031">2031</option>
-                <option value="2032">2032</option>
-              </select>
-            </div>
-          
-              <div class="bandeira">
-                <img id="bandeira-visa" src="bandeira/visa.png" class="hide">
-
-                <img id="bandeira-mastercard" src="bandeira/master.png" class="hide">
-                
-                <img id="bandeira-elo" src="bandeira/elo.png" class="hide">
-              
-             
-            </div>
+          <div class="bandeira">
+            <img id="bandeira-visa" src="bandeira/visa.png" class="hide">
+            <img id="bandeira-mastercard" src="bandeira/master.png" class="hide">
+            <img id="bandeira-elo" src="bandeira/elo.png" class="hide">
           </div>
-          <input type="submit" value="Finalizar a compra" class="submit-btn" id="enviar-btn">
+        </div>
+        <input type="submit" value="Finalizar a compra" class="submit-btn" id="enviar-btn">
+      </form>
+    </div>
+  </main>
 
-        </form>
-      </div>
-    </main>
+  <script type="module" src="index.js"></script>
+</body>
 
-    <script type="module" src="index.js"></script>
-  </body>
 </html>
