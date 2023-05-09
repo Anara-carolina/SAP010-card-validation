@@ -42,6 +42,16 @@ body {
     margin-right: 50px;
   }
 
+  .container p {
+    text-align: center;
+    color: black;
+    font-family: 'arial', sans-serif;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 
   .tooltip {
     position: relative;
