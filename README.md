@@ -30,10 +30,17 @@ Pode ser utilizado em compras e-commerce.
 Possui uma interface simples de fácil utilização para todas as pessoas. 
 
 ## 2.1 Interface 
-MOBILE 
-![Texto alternativo da imagem](src/projeto/mobile.png)
-
-WEB
-![Texto alternativo da imagem](src/projeto/web.png)
 
 
+## MOBILE 
+
+
+![Dispositivo móvel](src/projeto/mobile.png)
+
+### WEB
+
+
+![WEB](src/projeto/web.png)
+
+
+s
