@@ -43,4 +43,3 @@ Possui uma interface simples de fácil utilização para todas as pessoas.
 ![WEB](src/projeto/web.png)
 
 
-s
