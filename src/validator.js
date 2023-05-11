@@ -1,4 +1,4 @@
-const validator = {
+const validator = {  
   isValid(cardNumber) {
     function isValid(numeroCartao) {
       let soma = 0;
