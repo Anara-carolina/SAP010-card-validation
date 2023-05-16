@@ -1,114 +1,84 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #fff;
+body{/*define um estilo parab todo o corpo da minha pagina */
+    font-family: 'Poppins', sans-serif;/*define a fonte utilizado */
+    margin:0;/* aqui deefini que minha página  comece no topo e à esquerda da janela do navegador retirando espaçamento(margem) ao redor da minha página */
+    padding:0;/* padding: 0; define que o elemento body não terá nenhum espaço de preenchimento dentro de suas bordas, ou seja, o conteúdo do elemento body começará imediatamente após suas bordas */
 }
 
-.container {
-    min-height: 100vh;
-    background: linear-gradient(45deg, blueviolet, deeppink);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;
+.container {/* Define um estilo para um contêiner que envolve o formulário*/
+    min-height: 100vh; /*efine a altura mínima do container como 100% da altura da viewport do usuário */
+    background: linear-gradient(45deg, blueviolet, deeppink);/*criei um fundo gradiente com duas cores com um angulo de 45graus */
+    display: flex; /* criei um  flex container, permitindo que seus filhos sejam todos alinhados */
+    align-items: center; /*Alinhei verticalmente os filhos do container ao centro.*/
+    justify-content: center; /* Centralizei horizontalmente os filhos do container.*/
+    flex-flow: column;/*forma que consegui alinhar  o cartão com o formulario em colunas verticalmente */ 
 }
 
-.container form {
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 600px;
-    padding-top: 160px;
+.container form { /* define um estilo para o contêiner do interior do formulário*/
+    background: #fff; /*colquei o fundo do form branco */
+    border-radius: 5px; /*utilezei 5 pixel para arrendodar as cantos do conteiner */
+    padding: 20px; /*adicionei um preenchimento em todas as direçoes  para que os imput fiquem longe das bordas do conteiner */
+    width: 600px; /* defini a largura do meu conteiner */
+    padding-top: 160px; /* coloquei um preenchimento na parte superior do meu conteiner */
     
-}
-.container form .inputbox span{
-    display: block;
-    color:#999;
-    padding-bottom: 5px;
-    
-}
+}    
 
-.container form .inputBox{
+.inputBox{ /* aqui defini o espaçmento entre os input dentro do meu form */
     margin-top: 20px;
     margin-right: 20px;
 }
-.container form .inputBox span{
+.inputBox span{ /*aqui defini um displey alinhado com os seus filhos dentro do meu grupo <span>, e oepaçamento inferior*/
     display: flex;
-    color: #999;
     padding-bottom: 5px;
 }
 
-.container form .inputBox input,
-.container form .inputBox select{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid rgba(0,0,0,.3);
-    color: #444;
+.inputBox input,
+.inputBox select{ /*define o estilo dos meus inputse input select */
+    width: 100%; /* define a largura dos input que ocupa 100% dentro do meu conteiner form */
+    padding: 10px; /*preenchumento interno dos input e input box no tamaho de 10 pixels */
+    border-radius: 10px; /* aqui arrendodei em 10 pixels as bordas dos meus inputs e input selecet*/
 }
 
-.container form .flexbox{
+.flexbox{ /* aqui coloquei um display flex, que me permite alinhar todo meu conjunto flexbox, e na propriedade gap me permitiu dar um espaçamento entre os input*/
     display: flex;
     gap: 15px;
 }
 
-.container form .inputBox{
-    flex: 1 1 150px;
-}
 
-.container form .submit-btn{
-    width:100%;
-    background: linear-gradient(45deg, blueviolet, deeppink);
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color:#fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s linear;
-    
-}
-
-.container form .submit-btn:hover{
-    letter-spacing: 2px;
-    opacity: .8;
+.submit-btn{ /*estilização do meu botão*/
+    width:100%; /* Define a largura do botão como 100% da largura  */
+    background: linear-gradient(45deg, blueviolet, deeppink); /* Define um gradiente de cores de fundo para o botão */
+    margin-top: 20px; /* Define uma margem superior de 20 pixels para o botão */
+    padding: 10px; /* Define o preenchimento interno de 10 pixels para o botão */
+    font-size: 20px; /* Define o tamanho da fonte do texto do botão como 20 pixels */
+    color:#fff; /* Define a cor do texto do botão como branco */
+    border-radius: 10px; /* Define um raio de borda de 10 pixels para arredondar as bordas do botão */
+    cursor: pointer; /* Define o cursor do mouse como "pointer", indicando que o botão é clicável */
+    transition: .2s linear; /* Adiciona um efeito de transição suave de 0,2 segundos ao botão */
 }
 
 
-.container .card-container {
-    margin-bottom: -150px;
-    position:relative;
-    height: 250px;
-    width:400px;
-    text-align: right;
+.submit-btn:hover{ /*estilização do cursos do botão */
+    letter-spacing: 2px; /*aqui coloquei para que o usuario passe o mause em cima do cursor as letras ganhem um espaçamento de 2pixel*/
+    opacity: .8; /*ao passar o cursor a opacidade é reduzida tornando o botão um pouco transperente */
 }
-  
-img {
-    float: left;
-    width: 400px;
-    height: 250px;
-    margin-right: 10px; /* adiciona um espaço entre a imagem e o texto */
-  }
 
+
+.card-container img {
+    margin-bottom: -150px; /* aqui coloquei que a minha a imagem se sobrepõnha ao conteúdo abaixo dela. criando uma margem negativa de 150 ps*/
+    position:relative; /* permite que meu cartçao fique acima do meu comnteiner form */
+    height: 250px; /*altura da minha imagem */
+    width:400px; /*largura da minha imagem */
+}
   
   .bandeira img {
-    max-width: 40px;
-    max-height: 40px;
-    margin-top: 30px;
+    max-width: 80px; /* define a altura*/
+    max-height: 80px; /* define a largura */
+    margin-top: 30px; /*define a distancia superior do elemento anterior */
   }
 
  
 .bandeira-visa,
 .bandeira-mastercard,
-.bandeira-elo {
+.bandeira-elo {  /*ocultei minhas bandeiras para que  apareça somente quando for chamada no js */
    display: none;
 }
-
