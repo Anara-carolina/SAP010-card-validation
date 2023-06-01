@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
-
-const enviarBtn = document.getElementById("enviar-btn");
+// evento de clique para um botão chamado "enviar-btn". Quando o botão é clicado, a função associada a ele é executada
+const enviarBtn = document.getElementById("enviar-btn"); 
 const numeroCartaoInput = document.getElementById("numero");
 enviarBtn.addEventListener("click", function () {
   const numeroCartao = numeroCartaoInput.value;
