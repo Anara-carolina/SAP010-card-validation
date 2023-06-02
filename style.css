@@ -1,0 +1,84 @@
+body {
+    background-image: url("cartaoo/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+  }
+  
+  .next {
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+  }
+  
+
+  .container h1 {
+    text-align: center;
+    color: black; 
+    font-family: 'arial', sans-serif; 
+    margin-top: 10px; 
+    margin-right: 50px;
+  }
+
+  .container p {
+    text-align: center;
+    color: black;
+    font-family: 'arial', sans-serif;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+ 
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
