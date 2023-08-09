@@ -1,19 +1,40 @@
 import validator from './validator.js';
 
 // evento de clique para um botão chamado "enviar-btn". Quando o botão é clicado, a função associada a ele é executada
-const enviarBtn = document.getElementById("enviar-btn"); 
+const enviarBtn = document.getElementById("enviar-btn");
 const numeroCartaoInput = document.getElementById("numero");
-enviarBtn.addEventListener("click", function () {
+const mensagemValidacao = document.getElementById("mensagem-validacao");
+
+
+
+enviarBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  const nomeTitular = document.getElementById("nome").value;
   const numeroCartao = numeroCartaoInput.value;
-  const isValid1 = validator.isValid(numeroCartao);
-  if (numeroCartao === '') {
-    alert('Por favor, insira um número de cartão válido');
-  } else if (isValid1) {
-    alert('sua compra foi aprovada com sucesso!!! numero de cartão válido! ' + validator.maskify(numeroCartao));
+  const isValid = validator.isValid(numeroCartao);
+
+  if (nomeTitular === '') {
+    mensagemValidacao.textContent = 'Por favor, insira o nome do titular';
+    mensagemValidacao.classList.remove("mensagem-sucesso");
+    mensagemValidacao.classList.add("mensagem-erro");
+  } else if (numeroCartao === '') {
+    mensagemValidacao.textContent = 'Por favor, insira um número de cartão válido';
+    mensagemValidacao.classList.remove("mensagem-sucesso");
+    mensagemValidacao.classList.add("mensagem-erro");
+  } else if (isValid) {
+    const cartaoMascarado = validator.maskify(numeroCartao);
+    mensagemValidacao.textContent = `Sua compra foi aprovada com sucesso!!! Número de cartão válido: ${cartaoMascarado}`;
+    mensagemValidacao.classList.remove("mensagem-erro");
+    mensagemValidacao.classList.add("mensagem-sucesso");
   } else {
-    alert('Sua compra infelizmente não foi aprovada, digite um número de cartão válido');
+    mensagemValidacao.textContent = 'Sua compra infelizmente não foi aprovada, digite um número de cartão válido';
+    mensagemValidacao.classList.remove("mensagem-sucesso");
+    mensagemValidacao.classList.add("mensagem-erro");
   }
 });
+
+
 
 
 

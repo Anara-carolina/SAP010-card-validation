@@ -3,6 +3,23 @@ body{/*define um estilo parab todo o corpo da minha pagina */
     margin:0;/* aqui deefini que minha página  comece no topo e à esquerda da janela do navegador retirando espaçamento(margem) ao redor da minha página */
     padding:0;/* padding: 0; define que o elemento body não terá nenhum espaço de preenchimento dentro de suas bordas, ou seja, o conteúdo do elemento body começará imediatamente após suas bordas */
 }
+/* Estilo para a mensagem de sucesso */
+.mensagem-sucesso {
+    color: rgb(17, 184, 17); /* Cor mais forte */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+  }
+  
+  /* Estilo para as mensagens de erro */
+  .mensagem-erro {
+    color: darkred; /* Cor mais forte */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+  }
+  
+  
+
+
 
 .container {/* Define um estilo para um contêiner que envolve o formulário*/
     min-height: 100vh; /*efine a altura mínima do container como 100% da altura da viewport do usuário */

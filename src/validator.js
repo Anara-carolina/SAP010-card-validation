@@ -14,7 +14,7 @@ const validator = {   //Aqui, estamos criando um objeto chamado validator. Esse 
 
           }
         }
-        soma += digito; //Aqui, estamos adicionando o dígito à soma dos dígitos do cartão de crédito.
+        soma += digito; //Aqui, estamos adicionando o dígito a soma dos dígitos do cartão de crédito.
         digitosPares = !digitosPares; //Aqui, estamos alternando a variável digitosPares entre verdadeiro e falso para garantir que apenas os dígitos pares sejam multiplicados por 2.
       }
       return soma % 10 === 0; // Se a soma dos dígitos do cartão de crédito for divisível por 10, o cartão é válido
@@ -26,7 +26,7 @@ const validator = {   //Aqui, estamos criando um objeto chamado validator. Esse 
     if (cardNumber.length > 4) { // Aqui, estamos verificando se o número do cartão tem mais de 4 dígitos. Se tiver, precisamos mascarar todos os dígitos, exceto os últimos 4.
       const lastFourDigits = cardNumber.slice(-4); // Extrai os últimos 4 dígitos do número do cartão
 
-      const maskedValue = "#".repeat(cardNumber.length - 4) + lastFourDigits; //// Gera uma string com "#" repetidos o número de vezes necessário para mascarar os dígitos
+      const maskedValue = "*".repeat(cardNumber.length - 4) + lastFourDigits; //// Gera uma string com "#" repetidos o número de vezes necessário para mascarar os dígitos
       return maskedValue; //// Retorna o valor mascarado
     } else { 
       return cardNumber; 
